@@ -37,7 +37,7 @@ const LoginForm = () => {
     const payload = JSON.stringify({ email, password });
 
     try {
-      const res = await fetch("https://auth-qa.qencoe.com/v1/auth/login", {
+      const res = await fetch("https://auth-qa.qencode.com/v1/auth/login", {
         method: "POST",
         body: payload,
         headers: {
