@@ -4,4 +4,4 @@ npm run dev
 
 
 
-https://cerulean-marigold-73cd2d.netlify.app/sign-up
+https://cerulean-marigold-73cd2d.netlify.app
