@@ -1,0 +1,169 @@
+.pageWrap {
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.contentWrap {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  @media (max-width: 500px) {
+    padding: 0 16px;
+  }
+}
+
+.logo {
+  margin-top: 180px;
+  margin-bottom: 80px;
+  @media (max-width: 500px) {
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+}
+
+.header {
+  font-size: 30px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  @media (max-width: 500px) {
+    font-size: 20px;
+  }
+}
+.form {
+  width: 100%;
+}
+
+.socialButtons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.socialButton {
+  background-color: #fff;
+  height: 48px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid #d3d8dc;
+  outline: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  font-size: 14px;
+  color: #060e1e;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+.separator {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: #bec5cc;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.line {
+  height: 1px;
+  background-color: #bec5cc;
+  flex-grow: 1;
+}
+
+.or {
+  font-size: 12px;
+}
+
+.inputs {
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.inputWrap {
+  position: relative;
+}
+
+.input {
+  height: 48px;
+  width: 100%;
+  border: 1px solid #d3d8dc;
+  border-radius: 6px;
+  font-size: 14px;
+  padding-left: 12px;
+  padding-right: 30px;
+  color: #060e1e;
+  font-family: inherit;
+  &:placeholder {
+    color: #a1abb5;
+    font-size: 15px;
+    font-family: inherit;
+  }
+}
+
+.eye {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.forgot {
+  text-align: right;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+.forgotLink {
+  color: #316fea;
+  text-align: right;
+  margin-bottom: 30px;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.submitBtn {
+  background-color: #316fea;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 48px;
+  border-radius: 8px;
+  width: 100%;
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.footer {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  font-weight: normal;
+  @media (max-width: 360px) {
+    div {
+      font-size: 12px;
+    }
+  }
+}
+
+.link {
+  color: #316fea;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.error {
+  color: red;
+  font-size: 15px;
+  margin: 8px 0;
+}
