@@ -7,7 +7,7 @@ import google from "../../assets/google.png";
 import git from "../../assets/git.png";
 import eye from "../../assets/eye.png";
 import eyeClosed from "../../assets/eyeClosed.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");
@@ -15,6 +15,8 @@ const LoginForm = () => {
   const [passwordError, setPasswordError] = useState("");
   const [emailError, setEmailError] = useState("");
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+
+  const navigate = useNavigate();
 
   const togglePasswordVisible = () => {
     setIsPasswordVisible((prev) => !prev);
@@ -47,8 +49,10 @@ const LoginForm = () => {
       });
       const data = await res.json();
 
-      if (data.hasOwnProperty("error"))
-        setPasswordError("Incorrect password or no such user found");
+      // if (data.hasOwnProperty("error"))
+      //   setPasswordError("Incorrect password or no such user found");
+
+      window.location.href = "https://cloud.qencode.com/";
     } catch {
       console.log("an error occured");
     }
